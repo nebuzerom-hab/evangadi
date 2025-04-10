@@ -1,0 +1,25 @@
+question and answer system
+
+additional user functionality
+
+1. user can register as admin if they get admin secret key
+2. can give answer rating for another person posted answer, 
+but can not give rating  their on answer
+3.can view their profile
+      -can edit profile
+      -can change password
+4.can reset password
+5. can receive email notification when new question are posted
+6. can receive email notification when new answer are posted
+
+admin functionality
+1. admin register as admin using admin secret key
+2.gather general information from admin dashboard
+3.can create user account for new regular user
+4.can edit and delete user information
+5.can edit and delete any question posted by user
+5.can edit and delete any answer posted by user
+6 can post answer for question 
+7.cab give rating for answer posted by another person only
+
+
