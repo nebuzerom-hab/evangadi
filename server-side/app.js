@@ -5,15 +5,17 @@ const app = express();
 const cors = require("cors");
 
 // Enable CORS for all origins
-// 
-const cors = require("cors");
 
-const corsOptions = {
+
+
+ const corsOptions = {
   origin: "https://evangadi-formu.nebiatzportfolio.com",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true, // only true if using cookies or auth
+  credentials: true,
   optionsSuccessStatus: 204,
 };
+
+
 
 app.use(cors(corsOptions));
 
