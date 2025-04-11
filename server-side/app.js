@@ -5,14 +5,22 @@ const app = express();
 const cors = require("cors");
 
 // Enable CORS for all origins
+// 
+const cors = require("cors");
+
 const corsOptions = {
-  origin: "https://evangadi-formu.nebiatzportfolio.com", // Allow any origin
-  credentials: true, // Credentials aren't needed with wildcard origin
-   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  optionsSuccessStatus: 200, // For legacy browser support
+  origin: "https://evangadi-formu.nebiatzportfolio.com",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true, // only true if using cookies or auth
+  optionsSuccessStatus: 204,
 };
 
 app.use(cors(corsOptions));
+
+// Handle preflight requests explicitly
+app.options("*", cors(corsOptions));
+
+
 
 const port = 7700;
 
