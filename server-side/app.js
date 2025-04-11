@@ -45,6 +45,10 @@ const adminAnswersRoutes = require("./routes/adminAnswerRoutes");
 app.use(express.json());
 
 // user routes middleware
+app.get("/api/test", (req, res) => {
+  res.send("✅ Server is working!");
+});
+
 app.use("/api/users", userRoutes);
 
 // post Question middleware
