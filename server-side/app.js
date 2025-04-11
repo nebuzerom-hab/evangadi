@@ -6,8 +6,9 @@ const cors = require("cors");
 
 // Enable CORS for all origins
 const corsOptions = {
-  origin: "*", // Allow any origin
-  credentials: false, // Credentials aren't needed with wildcard origin
+  origin: "https://evangadi-formu.nebiatzportfolio.com", // Allow any origin
+  credentials: true, // Credentials aren't needed with wildcard origin
+   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   optionsSuccessStatus: 200, // For legacy browser support
 };
 
